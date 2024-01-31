@@ -1,5 +1,7 @@
 <script>
 	let nombre= 'Jhoana';
+
+	import Boton from "./components/Boton.svelte";
 </script>
 
 <main>
@@ -7,6 +9,7 @@
 	<input type="text" name="" id="" bind:value={nombre}>
 
 	<p>Hola, {nombre}!</p>
+	<Boton />
 </main>
 
 <style>
