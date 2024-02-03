@@ -2,6 +2,8 @@
 	let nombre= 'Jhoana';
 
 	import Boton from "./components/Boton.svelte";
+	import TestA from "./components/testA.svelte";
+
 </script>
 
 <main>
@@ -10,11 +12,12 @@
 
 	<p>Hola, {nombre}!</p>
 	<Boton />
+	<TestA />
 </main>
 
 <style>
-	h1 {
+	/*h1 {
 		color: green;
-	}
+	}*/
 
 </style>
