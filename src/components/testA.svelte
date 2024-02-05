@@ -1,6 +1,6 @@
 <!-- TestA.svelte -->
 <script>
-    import Question from './Question.svelte';
+    import QuestionA from './QuestionA.svelte';
 
     let questions = [
         {
@@ -13,8 +13,7 @@
             question1: "Prefiero la profundidad de las experiencias a su variedad.",
             question2: "Prefiero la variedad de experiencias a la profundidad de cada una.",
             options: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
-        },
-
+        }
     ];
 
     let currentIndex = 0;
@@ -26,12 +25,14 @@
 
 <main>
     <h1>Personality Test</h1>
-    <Question
-        {question1=questions[currentIndex].question}
-        {question2=questions[currentIndex].question}
-        {options=questions[currentIndex].options}
-        {currentIndex=currentIndex}
-        {totalQuestions=questions.length}
-        {onNext=handleNext}
-    />
+    {#if currentIndex < questions.length}
+        <QuestionA
+            {question1=questions[currentIndex].question1}
+            {question2=questions[currentIndex].question2}
+            {options=questions[currentIndex].options}
+        />
+        <button on:click={handleNext}>Next</button>
+    {:else}
+        <p>All questions answered.</p>
+    {/if}
 </main>

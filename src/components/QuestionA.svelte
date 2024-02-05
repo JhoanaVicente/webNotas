@@ -1,6 +1,6 @@
 <!-- Question.svelte -->
 <script>
-    export let question;
+    export let questions;
     export let options;
     export let currentIndex;
     export let totalQuestions;
@@ -13,7 +13,7 @@
 
 <div class="question">
     <h2>TEST {currentIndex + 1} of {totalQuestions}</h2>
-    <p>{question}</p>
+    <p>{questions}</p>
     {#each options as option}
         <label><input type="radio" name="q{currentIndex + 1}" value="{option}"> {option}</label>
     {/each}

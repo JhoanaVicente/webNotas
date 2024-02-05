@@ -2,7 +2,7 @@
 	let nombre= 'Jhoana';
 
 	import Boton from "./components/Boton.svelte";
-  import QuestionsA from "./components/QuestionsA.svelte";
+  import QuestionA from "./components/QuestionA.svelte";
 	import TestA from "./components/TestA.svelte";
 
 </script>
@@ -14,7 +14,7 @@
 	<p>Hola, {nombre}!</p>
 	<Boton />
 	<TestA />
-	<QuestionsA />
+	<QuestionA />
 </main>
 
 <style>
