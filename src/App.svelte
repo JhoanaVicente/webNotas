@@ -9,18 +9,24 @@
 			title: 'Vacaciones', 
 			color: 'yellow',
 			text: 'Hola!',
+		},
+		{
+			id: 1,
+			title: 'Vacaciones', 
+			color: 'red',
+			text: 'Hola!',
 		}
 	]; 
 	let copyNotes = [...notes];
 
 	let count = notes.length;
-	
+
 </script>
 
 <main>
 	<Header />
-	<div>{count} notas</div>
-	<Dashboard />
+	<div>{count} notes</div>
+	<Dashboard notes={notes} />
 	
 </main>
 

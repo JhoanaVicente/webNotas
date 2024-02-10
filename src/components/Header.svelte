@@ -6,7 +6,7 @@
 
 
 <div class="Header">
-    <Logo />
+    <Logo appName='Mini Notes' />
 
     <Search />
 
