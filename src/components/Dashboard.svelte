@@ -3,14 +3,13 @@
     import Notes from "./Notes.svelte";
 </script>
 
-<div class="Dashboard">
+<main class="Dashboard">
     <div class="notes-container">
         {#each notes as {title, color, text} }
             <Notes {title} {color} {text} />
         {/each}
-
     </div>
-</div>
+</main>
 
 <style>
     .Dashboard{
@@ -25,5 +24,4 @@
         width: 100%;
         gap: 10px;
     }
-
 </style>
